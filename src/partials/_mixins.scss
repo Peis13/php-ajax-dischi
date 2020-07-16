@@ -1,0 +1,45 @@
+@mixin display_flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin navbar {
+  align-items: center;
+  width: 100%;
+  height: $altezza_header;
+}
+
+@mixin main {
+  width: 100%;
+  height: $altezza_main;
+  overflow-y: auto;
+  background-color: $colore_sfondo;
+}
+
+@mixin singolo_album {
+  width: $larghezza_singolo_album;
+  margin: 0 nth($lista_margine_padding, 1) nth($lista_margine_padding, 3);
+  padding: nth($lista_margine_padding, 2);
+  background-color: $colore_riempimento;
+}
+
+@mixin titolo_album {
+  color: $colore_titolo;
+  margin-top: nth($lista_margine_padding, 2);
+  text-transform: uppercase;
+}
+
+@mixin descrizione_album {
+  color: $colore_descrizione;
+  margin-top: nth($lista_margine_padding, 3);
+}
+
+@mixin artista {
+  font-size: $font_size_artista_album;
+  margin-bottom: nth($lista_margine_padding, 1);
+}
+
+@mixin anno {
+  font-size: $font_size_anno_album;
+}

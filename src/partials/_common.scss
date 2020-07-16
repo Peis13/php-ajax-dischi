@@ -8,6 +8,24 @@
 
 // STILI GENERALI
 body {
-  background-color: green;
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
+  font-size: $font_size_titolo_album;
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: $larghezza_container;
+  margin: auto;
+}
+
+.sezione {
+  padding: nth($lista_margine_padding, 5);
 }
 // FINE STILI GENERALI

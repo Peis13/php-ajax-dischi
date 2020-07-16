@@ -1,0 +1,14 @@
+// HEADER
+header {
+  background-color: $colore_riempimento;
+
+  .navbar {
+    @include display_flex;
+    @include navbar;
+
+    .logo {
+      width: $larghezza_logo;
+    }
+  }
+}
+// FINE HEADER

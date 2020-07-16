@@ -1,0 +1,27 @@
+// COLORI
+$colore_riempimento: #2e3a46;
+$colore_sfondo: #1e2d3b;
+$colore_titolo: #fff;
+$colore_descrizione: #6d7073;
+// FINE COLORI
+
+// GRANDEZZE
+// Altezze
+$altezza_header: 70px;
+$altezza_main: calc(100vh - 70px);
+
+// Larghezze
+$larghezza_container: 1024px;
+$larghezza_logo: 50px;
+$larghezza_singolo_album: calc((100% / 4) - 20px);
+// FINE GRANDEZZE
+
+// FONT-SIZE
+$font_size_titolo_album: 21px;
+$font_size_artista_album: 20px;
+$font_size_anno_album: 18px;
+// FINE FONT-SIZE
+
+// MARGINI e PADDING
+$lista_margine_padding: 10px 20px 30px 40px 50px;
+// FINE MARGINI e PADDING

@@ -1,0 +1,37 @@
+// MAIN
+main {
+  @include main;
+
+  #albums {
+    text-align: center;
+
+    .container {
+      @include display_flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .singolo-album {
+        @include singolo_album;
+        
+        .titolo-album {
+          @include titolo_album;
+        }
+        .descrizione-album {
+          @include descrizione_album;
+
+          .artista,
+          .anno {
+            display: block;
+          }
+          .artista {
+            @include artista;
+          }
+          .anno {
+            @include anno;
+          }
+        }
+      }
+    }
+  }
+}
+// FINE MAIN
