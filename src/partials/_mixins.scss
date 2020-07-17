@@ -26,13 +26,8 @@
 
 @mixin titolo_album {
   color: $colore_titolo;
-  margin-top: nth($lista_margine_padding, 2);
+  margin: nth($lista_margine_padding, 2) 0;
   text-transform: uppercase;
-}
-
-@mixin descrizione_album {
-  color: $colore_descrizione;
-  margin-top: nth($lista_margine_padding, 3);
 }
 
 @mixin artista {

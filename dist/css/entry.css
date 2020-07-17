@@ -67,13 +67,12 @@ main #albums .container .singolo-album {
 
 main #albums .container .singolo-album .titolo-album {
   color: #fff;
-  margin-top: 20px;
+  margin: 20px 0;
   text-transform: uppercase;
 }
 
 main #albums .container .singolo-album .descrizione-album {
   color: #6d7073;
-  margin-top: 30px;
 }
 
 main #albums .container .singolo-album .descrizione-album .artista,

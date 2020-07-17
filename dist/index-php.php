@@ -73,5 +73,19 @@ Consigli:
       </section>
     </main>
     <!-- FINE MAIN -->
+
+    <!-- Script JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Template Handlebars -->
+    <!-- <script id="entry-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h1>{{title}}</h1>
+        <div class="body">
+          {{body}}
+        </div>
+      </div>
+    </script> -->
+
   </body>
 </html>

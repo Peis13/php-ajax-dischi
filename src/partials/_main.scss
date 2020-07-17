@@ -12,12 +12,12 @@ main {
 
       .singolo-album {
         @include singolo_album;
-        
+
         .titolo-album {
           @include titolo_album;
         }
         .descrizione-album {
-          @include descrizione_album;
+          color: $colore_descrizione;
 
           .artista,
           .anno {
