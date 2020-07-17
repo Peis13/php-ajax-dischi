@@ -17,7 +17,7 @@ main {
           @include titolo_album;
         }
         .descrizione-album {
-          color: $colore_descrizione;
+          color: $colore_testo_secondario;
 
           .artista,
           .anno {

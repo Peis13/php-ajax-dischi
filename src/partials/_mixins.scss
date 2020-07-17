@@ -25,7 +25,7 @@
 }
 
 @mixin titolo_album {
-  color: $colore_titolo;
+  color: $colore_testo_primario;
   margin: nth($lista_margine_padding, 2) 0;
   text-transform: uppercase;
 }

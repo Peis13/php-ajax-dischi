@@ -1,4 +1,17 @@
-<?php include __DIR__ . '/database.php'; ?>
+<!-- Stampare a schermo una decina di dischi musicali (vedi screenshot nel file zip) in due modi diversi:
+	- Solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi.
+	- Attraverso l’utilizzo di AJAX: al caricamento della pagina ajax chiederà attraverso una chiamata i dischi a php e li stamperà attraverso handlebars.
+
+Utilizzare: Html, Sass, JS, jQuery, handlebars, Php
+Font: Lato
+
+Opzionale:
+- Attraverso un’altra chiamata ajax, filtrare gli
+album per artista
+
+Consigli:
+	1- Creare 2 file index diversi, uno per la versione col solo php, l’altro per la versione Ajax. -->
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -25,7 +38,7 @@
     <!-- Script JS -->
     <script type="text/javascript" src="js/script.js"></script>
 
-    <!-- Template Handlebars -->
+    <!-- TEMPLATE ALBUM -->
     <script id="album-template" type="text/x-handlebars-template">
 
       <!-- Singolo album -->
@@ -52,6 +65,12 @@
       </div>
       <!-- Fine Singolo album -->
     </script>
+    <!-- FINE TEMPLATE ALBUM -->
 
+    <!-- TEMPLATE ARTISTI -->
+    <script id="artisti-template" type="text/x-handlebars-template">
+      <option value="{{ author }}">{{ author }}</option>
+    </script>
+    <!-- FINE TEMPLATE ARTISTI -->
   </body>
 </html>
