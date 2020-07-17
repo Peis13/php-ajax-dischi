@@ -25,18 +25,7 @@ Consigli:
   <body>
 
     <!-- HEADER -->
-    <header>
-      <div class="container">
-        <nav class="navbar">
-
-          <!-- Logo -->
-          <div class="logo">
-            <img src="img/logo.png" alt="logo-spotify">
-          </div>
-          <!-- Fine Logo -->
-        </nav>
-      </div>
-    </header>
+    <?php include __DIR__ . '/partials/header.php'; ?>
     <!-- FINE HEADER -->
 
     <!-- MAIN -->
@@ -73,19 +62,5 @@ Consigli:
       </section>
     </main>
     <!-- FINE MAIN -->
-
-    <!-- Script JS -->
-    <script type="text/javascript" src="js/script.js"></script>
-
-    <!-- Template Handlebars -->
-    <!-- <script id="entry-template" type="text/x-handlebars-template">
-      <div class="entry">
-        <h1>{{title}}</h1>
-        <div class="body">
-          {{body}}
-        </div>
-      </div>
-    </script> -->
-
   </body>
 </html>

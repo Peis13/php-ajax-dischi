@@ -16103,11 +16103,31 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 
 var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
-$(document).ready(function () {// var source = document.getElementById("entry-template").innerHTML;
-  // var template = Handlebars.compile(source);
-  //
-  // var context = { title: "My New Post", body: "This is my first post!" };
-  // var html = template(context);
+$(document).ready(function () {
+  $.ajax({
+    url: 'http://localhost:8888/php-ajax-dischi/dist/server.php',
+    method: 'GET',
+    success: function success(risposta) {
+      stampaAlbum(risposta);
+    },
+    error: function error() {
+      alert('errore');
+    }
+  }); ////////// STAMPA ALBUM
+  // Funzione che stampa i singoli album con handlebars
+  //  --> database: array di oggetti che mi torna dalla chiamata ajax al server e che andrò a ciclare. Ogni oggetto lo do in pasto a Handlebars
+  // return: niente
+
+  function stampaAlbum(database) {
+    var source = $("#album-template").html();
+    var template = Handlebars.compile(source); // ciclo l'array
+
+    for (var i = 0; i < database.length; i++) {
+      var singoloAlbum = database[i];
+      var html = template(singoloAlbum);
+      $('#albums .container').append(html);
+    }
+  }
 });
 
 /***/ }),
