@@ -35,9 +35,6 @@ Consigli:
     </main>
     <!-- FINE MAIN -->
 
-    <!-- Script JS -->
-    <script type="text/javascript" src="js/script.js"></script>
-
     <!-- TEMPLATE ALBUM -->
     <script id="album-template" type="text/x-handlebars-template">
 
@@ -72,5 +69,8 @@ Consigli:
       <option value="{{ author }}">{{ author }}</option>
     </script>
     <!-- FINE TEMPLATE ARTISTI -->
+
+    <!-- Script JS -->
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
