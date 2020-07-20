@@ -1,6 +1,7 @@
 <?php
 // Richiamo il database che poi andrò a convertire in json
 include __DIR__ . '/database.php';
+header('Content-Type: application/json');
 
 // Se l'array $_GET che mi torna dalla chiamata ajax è vuoto oppure il valore della chiave 'author' è uguale a 'tutti'
 //  --> converti in json tutto il $database
@@ -10,7 +11,6 @@ include __DIR__ . '/database.php';
 if (empty($_GET) || $_GET['author'] === 'tutti') {
 
   $database_json = json_encode($database);
-  header('Content-Type: application/json');
   echo $database_json;
 
 } else {
@@ -23,7 +23,6 @@ if (empty($_GET) || $_GET['author'] === 'tutti') {
     }
   }
   $albums_artista_richiesto_json = json_encode($albums_artista_richiesto);
-  header('Content-Type: application/json');
   echo $albums_artista_richiesto_json;
 }
 ?>

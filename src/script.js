@@ -4,19 +4,7 @@ var Handlebars = require("handlebars");
 
 $(document).ready(function() {
 
-  $.ajax(
-    {
-      url: 'http://localhost:8888/php-ajax-dischi/dist/server.php',
-      method: 'GET',
-      success: function(risposta) {
-        generaSelect(risposta);
-        stampaAlbum(risposta);
-      },
-      error: function() {
-        alert('errore');
-      }
-    }
-  );
+  ottieniAlbums();
 
   $(document).on('change', '.select-artisti', function() {
     var artistaSelezionato = $(this).val();
@@ -37,6 +25,25 @@ $(document).ready(function() {
       }
     );
   });
+
+  ////////// OTTIENI ALBUM
+  // Chiamata al server per ottenere tutti gli albums
+  function ottieniAlbums() {
+
+    $.ajax(
+      {
+        url: 'http://localhost:8888/php-ajax-dischi/dist/server.php',
+        method: 'GET',
+        success: function(risposta) {
+          generaSelect(risposta);
+          stampaAlbum(risposta);
+        },
+        error: function() {
+          alert('errore');
+        }
+      }
+    );
+  }
 
   ////////// STAMPA ALBUM
   // Funzione che stampa i singoli album con handlebars

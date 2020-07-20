@@ -43,7 +43,7 @@ Consigli:
 
         <!-- immmagine di copertina -->
         <div class="immagine-copertina">
-          <img src="{{ poster }}" alt="immagine-copertina">
+          <img src="{{ poster }}" alt="{{ title }}">
         </div>
         <!-- fine immagine di copertina -->
 
